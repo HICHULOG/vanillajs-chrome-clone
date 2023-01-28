@@ -1,3 +1,3 @@
-# VnillaJS Chrome 2023 Update
+# VnillaJS Momentum 2023 Update
 
 My first Clone Coding with JavaScript!
