@@ -23,15 +23,32 @@ body {
 }
 
 #date {
-  font-size: 22px;
+  font-size: 20px;
   margin: 0;
   margin-bottom: 10px;
 }
 
 #clock {
-  font-size: 30px;
+  font-size: 25px;
   margin: 0;
 }
+
+.login-form input{
+  text-align: center;
+  padding: 10px 40px;
+  background: none;
+  color: white;
+  margin: 25px 0px;
+  background-color: rgba(0,0,0,0.3);
+  border: none;
+  border-radius: 25px;
+}
+
+.login-form input::placeholder {
+  color: #ffffff;
+  font-size: 16px;
+}
+
 
 #todo-form input {
   border: none;
@@ -46,7 +63,14 @@ body {
 
 #todo-form input::placeholder {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 17px;
+  opacity: 0.9;
+}
+
+#todo-form input:focus {
+  background-color: rgba(0,0,0,0.3);
+  border: none;
+  border-radius: 25px;
 }
 
 #todo-list {
@@ -60,7 +84,7 @@ body {
 }
 
 #todo-list li span{
-  margin-right: 15px;
+  margin-right: 20px;
 }
 #todo-list li button{
   border: none;
@@ -88,4 +112,19 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
+  }
+
+  #reset {
+    z-index:90;
+    position:absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #reset:hover {
+    transform: translateX(-10px);
   }
