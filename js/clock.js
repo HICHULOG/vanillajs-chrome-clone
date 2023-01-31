@@ -1,4 +1,9 @@
+const todayDate = document.querySelector("h2#date");
 const clock = document.querySelector("h2#clock");
+
+const date = new Date();
+
+todayDate.innerText = date.toDateString();
 
 function getClock() {
   const date = new Date();
